@@ -46,9 +46,9 @@ with c2_item:
 st.subheader("Parâmetros de Cálculo")
 c1, c2 = st.columns(2)
 with c1:
-    filament_price = st.number_input("Preço do filamento (R$/kg)", 0.0, value=100.0, format="%.2f")
+    filament_price = st.number_input("Preço do filamento (R$/kg)", 0.0, value=0.0, format="%.2f")
     weight = st.number_input("Filamento usado (g)", 0.0, value=0.0, format="%.2f")
-    print_hours = st.number_input("Tempo de impressão (h)", 0.0, value=5.0, format="%.2f")
+    print_hours = st.number_input("Tempo de impressão (h)", 0.0, value=0.0, format="%.2f")
 with c2:
     power_w = st.number_input("Potência da impressora (W)", 0.0, value=220.0, format="%.0f")
     energy_rate = st.number_input("Tarifa de energia (R$/kWh)", 0.0, value=0.90, format="%.2f")
